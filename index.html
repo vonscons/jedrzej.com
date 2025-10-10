@@ -185,10 +185,17 @@
         @media (max-width: 768px) {
             body {
                 padding: 40px 20px;
+                min-height: 100vh;
+                justify-content: flex-start;
             }
 
             .container {
-                gap: 60px;
+                gap: 50px;
+            }
+
+            .photo {
+                width: 140px;
+                height: 140px;
             }
 
             .name {
@@ -202,11 +209,7 @@
 
             .bio {
                 font-size: 16px;
-            }
-
-            .photo {
-                width: 140px;
-                height: 140px;
+                line-height: 1.55;
             }
 
             .links-section {
@@ -218,29 +221,49 @@
 
         @media (max-width: 480px) {
             body {
-                padding: 30px 20px;
+                padding: 20px 20px;
+                min-height: 100vh;
+                justify-content: flex-start;
             }
 
             .container {
-                gap: 50px;
+                gap: 40px;
+            }
+
+            /* Hero section - maintain breathing room */
+            .photo {
+                width: 85px;
+                height: 85px;
             }
 
             .name {
-                font-size: 40px;
+                font-size: 38px;
                 letter-spacing: -1.5px;
+                margin-bottom: 20px;
             }
 
             .title {
                 font-size: 16px;
+                margin-top: 20px;
             }
 
+            /* Bio section - subtle optimization */
             .bio {
                 font-size: 15px;
+                line-height: 1.5;
             }
 
-            .photo {
-                width: 100px;
-                height: 100px;
+            .credibility {
+                margin-top: 18px;
+            }
+
+            /* Links section - optimize for scroll */
+            .links-section {
+                gap: 16px;
+            }
+
+            .cta-hint {
+                margin-top: 8px;
             }
         }
 
